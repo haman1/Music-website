@@ -1,0 +1,19 @@
+extends ../layout/index
+
+block content
+    main.container.mt-5
+        h1.text-center #{pageTitle}
+        .row.upcoming-events
+            each event in events
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        img.card-img-top(src=`/img/destiny_${event.image}.jpg`, class="img-fluid")
+                        .card-body
+                            h2=event.title
+                            p
+                                i.fa-solid.fa-city
+                                |     #{event.city}
+                                   
+                            
+                            p=event.description.substr(0, 100)
+                            a(href=`events/${event.id}`, class="btn btn-success btb-block") More Information

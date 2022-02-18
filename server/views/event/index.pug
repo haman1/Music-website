@@ -1,0 +1,15 @@
+extends ../layout/index
+
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src=`/img/destiny_${event.image}_ln.jpg`, alt="About Image")
+            .col-md-7
+                h1=event.title
+                p
+                    i.fa-solid.fa-city
+                    |     #{event.city}
+                                   
+                            
+                p=event.description

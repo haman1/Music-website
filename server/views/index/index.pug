@@ -1,0 +1,36 @@
+extends ../layout/index
+block slider
+    .slider
+        
+        em DJ Brayo
+block content
+    main.container.mt-5
+        h2.text-center.mb-5 About Us
+        .row.mb-5
+            .col-md-6
+                p Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. 
+        
+                p Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.
+            .col-md-6
+                img(src="/img/mu.jpg", alt="About Us Image", class="img-fluid")
+    .container
+        h2.text-center.mb-5 Upcoming Events
+        .row.upcoming-events
+            each event in events
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        img.card-img-top(src=`/img/destiny_${event.image}.jpg`, class="img-fluid")
+                        .card-body
+                            h2=event.title
+                            p
+                                i.fa-solid.fa-city
+                                |     #{event.city}
+                                   
+                            
+                            p=event.description.substr(0, 100)
+                            a(href=`events/${event.id}`, class="btn btn-success btb-block") More Information
+
+
+    .container
+        h2.text-center.my-5 Testimonials
+        include ../layout/partials/testimonials
