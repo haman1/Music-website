@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar
+#navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+  }
+  
+  #navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+  }
+   */
+
+/* Navigation */
+#main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #main-nav .container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  #main-nav .logo {
+    width: 180px;
+  }
+  
+  #main-nav ul {
+    justify-self: end;
+    display: flex;
+    list-style: none;
+  }
+  
+  #main-nav ul li a {
+    padding: 0.75rem;
+    font-weight: bold;
+    background: #fff;
+    justify-content: space-between;
+  }
+  
+  #main-nav ul li a.current {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  #main-nav ul li a:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+  }
+  
+  #main-nav .social {
+    justify-self: center;
+  }
+  
+  #main-nav .social i {
+    color: #777;
+    margin-right: .5rem;
+  }
+  
+  /* Showcase */
+  #showcase {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+  }
+  
+
+
+
+/* content css */
+#content {
+    height: auto;
+    width: 700px;
+    position: absolute;
+    right: 11%;
+    top: calc(50% - 215px);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Staatliches', cursive;
+    color: #15B9D5;
+}
+h1 {
+    font-size: 3.4rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+/* .btn-success {
+    background-color: #DC135F;
+    border-color: #DC135F;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    border-radius: .8rem;
+}
+.btn-success:hover {
+    background-color: rgb(184, 5, 73);
+    border-color: rgb(192, 7, 78);
+} */
+.slider {
+    background: url(../img/part.jpg);
+    min-height: 600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.slider h1 {
+    color: white;
+}
+.slider em {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    order: -1;
+    line-height: .8;
+    color: rgba(255, 255, 255, .5);
+}
+@media (min-width:768px) {
+    .slider em {
+        font-size: 8rem;
+    }
+}
+
+.home {
+    position: relative;
+}
+.home .main-nav {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-link.active {
+    border-bottom: 5px solid white;
+}
+blockquote {
+    font-weight: bold;
+    line-height: 2;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/* .main-nav {
+    background-color: #15B9D5;
+}
+header .nav a {
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    color: white;
+} */
+footer .nav a,
+.copyright {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    color: black;
+}
+.icons-list {
+    background-color: rgb(245, 245, 245);
+}
+.icons-list img {
+    height: 100px;
+}
+
+
+.discount {
+    height: 400px;
+    background-image: linear-gradient( rgba(0, 0, 0, .5) 0%,  rgba(0, 0, 0, .5) 100%),  url(../img/coupon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width:768px) {
+    .discount {
+        height: 400px;
+        background-image:  linear-gradient(
+            to right, 
+            rgba(0, 0, 0, .5) 0%, 
+            rgba(0, 0, 0, .5) 50%, 
+            transparent 50%, 
+            transparent 100%
+        ), url(../img/coupon.jpg);
+    }
+}
+.discount .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    color: white;
+}
+/* .discount p {
+    font-family: 'Staatliches', cursive;
+    line-height: .8;
+}
+.discount .title {
+    font-size: 2.4rem;
+}
+.discount .price {
+    color: #15B9D5;
+    font-size: 3rem;
+} */
+
+.upcoming-travels p {
+    font-size: .9rem;
+}
+i {
+    color: #DC135F;
+    font-size: 2rem;
+}
+
+.testimonials p{
+    font-size: .8rem;
+    font-weight: normal;
+}
+.testimonials p::before {
+    background-image: url(../img/quote.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 1rem;
+}
+.blockquote-footer {
+    text-align: right;
+    color: #DC135F;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#content h2 {
+    font-size: 220px;
+    color: #01ce69;
+}
+
+#content p {
+    font-size: 18px;
+}
+
+#content button {
+    height: 65px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    margin: 20px 0;
+    font-size: 20px;
+    background: #01ce69;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content button:hover {
+    color: #01ce69;
+    border: 2px solid #01ce69;
+    background: transparent;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Staatliches', cursive;
+    color: #0d0d0e;
+}
+h1 {
+    font-size: 3.4rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+/* .btn-success {
+    background-color: #DC135F;
+    border-color: #DC135F;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    border-radius: .8rem;
+}
+.btn-success:hover {
+    background-color: rgb(184, 5, 73);
+    border-color: rgb(192, 7, 78);
+} */
+
+/* content css */
+#content {
+    height: auto;
+    width: 700px;
+    position: absolute;
+    right: 11%;
+    top: calc(50% - 215px);
+}
+
+#content h2 {
+    font-size: 220px;
+    color: #01ce69;
+}
+
+#content p {
+    font-size: 18px;
+}
+
+#content button {
+    height: 65px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    margin: 20px 0;
+    font-size: 20px;
+    background: #01ce69;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content button:hover {
+    color: #01ce69;
+    border: 2px solid #01ce69;
+    background: transparent;
+}
+
+.slider {
+    background: url(../img/part.jpg);
+    min-height: 600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.slider h1 {
+    color: white;
+}
+.slider em {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    order: -1;
+    line-height: .8;
+    color: rgba(255, 255, 255, .5);
+}
+@media (min-width:768px) {
+    .slider em {
+        font-size: 8rem;
+    }
+}
+.home {
+    position: relative;
+}
+.home .main-nav {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-link.active {
+    border-bottom: 5px solid white;
+}
+blockquote {
+    font-weight: bold;
+    line-height: 2;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/* .main-nav {
+    background-color: #393b3b;
+} */
+header .nav a {
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    color: white;
+}
+/* footer .nav a,
+.copyright {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    color: black;
+} */
+/* .icons-list {
+    background-color: rgb(245, 245, 245);
+}
+.icons-list img {
+    height: 100px;
+} */
+
+/* 
+.discount {
+    height: 400px;
+    background-image: linear-gradient( rgba(0, 0, 0, .5) 0%,  rgba(0, 0, 0, .5) 100%),  url(../img/coupon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width:768px) {
+    .discount {
+        height: 400px;
+        background-image:  linear-gradient(
+            to right, 
+            rgba(0, 0, 0, .5) 0%, 
+            rgba(0, 0, 0, .5) 50%, 
+            transparent 50%, 
+            transparent 100%
+        ), url(../img/coupon.jpg);
+    }
+}
+.discount .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    color: white;
+}
+.discount p {
+    font-family: 'Staatliches', cursive;
+    line-height: .8;
+}
+.discount .title {
+    font-size: 2.4rem;
+}
+.discount .price {
+    color: #15B9D5;
+    font-size: 3rem;
+} */
+
+.upcoming-travels p {
+    font-size: .9rem;
+}
+i {
+    color: #0b1a0e;
+    font-size: 1.5rem;
+}
+
+.testimonials p{
+    font-size: .8rem;
+    font-weight: normal;
+}
+.testimonials p::before {
+    background-image: url(../img/quote.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 1rem;
+}
+/* .blockquote-footer {
+    text-align: right;
+    color: #DC135F;
+    font-weight: bold;
+    margin-top: 1rem;
+} */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+        
